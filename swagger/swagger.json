@@ -1,0 +1,529 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "\nMises à jour du document : \n\nVersion | Date | Auteur | Modification\n--------|------|--------|--------------\n v 1.0.0 | 31-07-2017 | GUINDO Amadou | Révision des path \n v 1.0.1 | 01-08-2017 | CHIKHAOUI Saad | Révision des path \n\n\n\n",
+    "version" : "1.0.0",
+    "title" : "S3D: Dépôt de données technique ARPEGE",
+    "contact" : {
+      "name" : "ARPEGE / S3D",
+      "email" : "ING-Arpege@sfr.com"
+    }
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/bankass79/3sd/1.0.0",
+  "tags" : [ {
+    "name" : "Acces",
+    "description" : "Ce service permettra à Arpege de créer,  ou de récupérer, ou de mettre à jour  un objet Acces dans le cadre du déploiement d’une commande.",
+    "externalDocs" : {
+      "description" : "Peopls category documentation",
+      "url" : "http://doc.simple.api/"
+    }
+  }, {
+    "name" : "ConfVPN",
+    "description" : "Ce service permettra à Arpege de créer,  ou de récupérer, ou de mettre à jour  un objet ConfVPN  dans le cadre du déploiement d’une commande.",
+    "externalDocs" : {
+      "description" : "Items category documentation",
+      "url" : "http://doc.simple.api/items"
+    }
+  }, {
+    "name" : "Poste",
+    "description" : "Ce service permettra d’écrire,  créer un objet  via une API REST à partir d’un SSA.",
+    "externalDocs" : {
+      "description" : "Media category documentation",
+      "url" : "http://doc.simple.api/"
+    }
+  }, {
+    "name" : "Commande",
+    "description" : "Ce service permettra de récupérer tous les objets liés à une commande par son idTransverse via une API REST.",
+    "externalDocs" : {
+      "description" : "JS Less Consumers documentation",
+      "url" : "http://doc.simple.api/"
+    }
+  } ],
+  "schemes" : [ "https", "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/acces/{idTransverse}" : {
+      "get" : {
+        "tags" : [ "Acces" ],
+        "description" : "Récupérer un poste.",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "idTransverse",
+          "in" : "path",
+          "description" : "L'identifiant transverse du vpn.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Détail de l'accès trouvé."
+          }
+        }
+      }
+    },
+    "/acces" : {
+      "post" : {
+        "tags" : [ "Acces" ],
+        "description" : "Ce service permettra aux SSA clients du 3D, d’écrire un nouvel objet dans la base de données. Crée un objet acces.",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "idTransverse",
+          "description" : "acces à creer",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Acces"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Full answer"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Acces" ],
+        "description" : "Ce service permettra de modifier un objet via une API REST à partir d’un SSA.",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "idTransverse",
+          "description" : "accès à modifier",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Acces"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Full answer"
+          }
+        }
+      }
+    },
+    "/acces/idT/{idTransverse}" : {
+      "delete" : {
+        "tags" : [ "Acces" ],
+        "description" : "Archiver tous les objets acces d’une commande.",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "idTransverse",
+          "in" : "path",
+          "description" : "L'identifiant transverse de l'objet acces.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Acces archivé."
+          }
+        }
+      }
+    },
+    "/acces/idO/{id}" : {
+      "delete" : {
+        "tags" : [ "Acces" ],
+        "description" : "Archiver un objet acces.",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "L'identifiant transverse de poste",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Acces archivé."
+          }
+        }
+      }
+    },
+    "/confVpn/{idTransverse}" : {
+      "get" : {
+        "tags" : [ "ConfVpn" ],
+        "description" : "Ajouter le paramètre « vpn » .",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "idTransverse",
+          "in" : "path",
+          "description" : "L'identifiant transverse du vpn.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Détail de l'accès trouvé.",
+            "schema" : {
+              "$ref" : "#/definitions/ConfVpn"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "ConfVpn" ],
+        "description" : "Archive un vpn.",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "idTransverse",
+          "in" : "path",
+          "description" : "L'identifiant transverse du vpn.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ConVpn archivé."
+          }
+        }
+      }
+    },
+    "/confVpn" : {
+      "post" : {
+        "tags" : [ "ConfVpn" ],
+        "description" : "Ce service permettra aux SSA clients du 3D, d’écrire un nouvel objet dans la base de données. Ajouter le paramètre « vpn » .",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "idTransverse",
+          "description" : "ConfVpn  a créer.",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ConfVpn"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Full answer"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "ConfVpn" ],
+        "description" : "Ce service permettra aux SSA clients du 3D, d’écrire un nouvel objet dans la base de données. Ajouter le paramètre « vpn » .",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "idTransverse",
+          "description" : "ConfVpn a modifié.",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ConfVpn"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Full answer"
+          }
+        }
+      }
+    },
+    "/poste/{idTransverse}" : {
+      "get" : {
+        "tags" : [ "Poste" ],
+        "description" : "Récupérer un poste.",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "idTransverse",
+          "in" : "path",
+          "description" : "L'identifiant transverse du vpn.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Détail de l'accès trouvé."
+          }
+        }
+      }
+    },
+    "/poste" : {
+      "post" : {
+        "tags" : [ "Poste" ],
+        "description" : "Ce service permettra aux SSA clients du 3D, d’écrire un nouvel objet dans la base de données. Crée un poste.",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "idTransverse",
+          "description" : "poste à creer",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Poste"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Full answer"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Poste" ],
+        "description" : "Ce service permettra de modifier un objet via une API REST à partir d’un SSA.",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "idTransverse",
+          "description" : "poste à modifier",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Poste"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Full answer"
+          }
+        }
+      }
+    },
+    "/poste/idT/{idTransverse}" : {
+      "delete" : {
+        "tags" : [ "Poste" ],
+        "description" : "Archiver tous les objets poste d’une commande.",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "idTransverse",
+          "in" : "path",
+          "description" : "L'identifiant transverse de poste",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Poste archivé."
+          }
+        }
+      }
+    },
+    "/poste/idO/{id}" : {
+      "delete" : {
+        "tags" : [ "Poste" ],
+        "description" : "Archiver un objet poste.",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "L'identifiant transverse de poste",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Poste archivé."
+          }
+        }
+      }
+    },
+    "/commande/{idTransverse}" : {
+      "get" : {
+        "tags" : [ "Commande" ],
+        "description" : "Ce service permettra à Arpege de récupérer un objet dans le cadre du déploiement d’une commande. Recuperer une commande.",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "idTransverse",
+          "in" : "path",
+          "description" : "L'identifiant transverse de la commande",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Détail de l'accès trouvé",
+            "schema" : {
+              "$ref" : "#/definitions/Commande"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Commande" ],
+        "description" : "Archive une commande.",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "idTransverse",
+          "in" : "path",
+          "description" : "L'identifiant transverse de la commande.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Commande archivée."
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ConfVpn" : {
+      "type" : "object",
+      "required" : [ "idTransverse", "idVpn" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "description" : "ID interne de la ressource"
+        },
+        "idTransverse" : {
+          "type" : "string",
+          "description" : "Id transverse"
+        },
+        "idVpn" : {
+          "type" : "string",
+          "description" : "Id du vpn"
+        }
+      },
+      "description" : "Configuration VPN",
+      "example" : {
+        "idTransverse" : "5425",
+        "idVpn" : "654JF"
+      }
+    },
+    "Acces" : {
+      "type" : "object",
+      "required" : [ "idTransverse", "type" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "description" : "ID interne de la ressource"
+        },
+        "idTransverse" : {
+          "type" : "string",
+          "description" : "IdTransverse de l'objet."
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "type d'accès (FTTH/ADSL/FTTB/VDSL).",
+          "enum" : [ "FTTH", "DSL" ]
+        },
+        "idEligibilite" : {
+          "type" : "string",
+          "description" : "ID d’éligibilité (Id R@ ou Id India)"
+        },
+        "debit" : {
+          "type" : "string",
+          "description" : "Débit de l’accès à commander"
+        },
+        "typedegroupage" : {
+          "type" : "number",
+          "description" : "Obligatoire si type=xDSL sinon vide.Valeurs autorisées (1,2,3 ou null . 1=TOTAL, 2=CONSTRUCTION,3=PARTIEL)."
+        }
+      },
+      "description" : "l'objet acces.",
+      "example" : {
+        "id" : "165354",
+        "idTransverse" : "5425",
+        "type" : "FTTH",
+        "idEligibilite" : "6465465",
+        "debit" : "100Mo",
+        "typeDegroupage" : 3
+      }
+    },
+    "Poste" : {
+      "type" : "object",
+      "required" : [ "idTransverse", "idufe", "ndi", "nom", "porte", "prenom", "rio" ],
+      "properties" : {
+        "idTransverse" : {
+          "type" : "string",
+          "description" : "Id transverse"
+        },
+        "ndi" : {
+          "type" : "string",
+          "description" : "Numéro de Désignation d’Installation"
+        },
+        "rio" : {
+          "type" : "string",
+          "description" : "Relevé d’Information Opérateur.Facilite l'identification de la ligne lors des demandes de portabilité du numéro."
+        },
+        "porte" : {
+          "type" : "string",
+          "description" : "Donnée indiquant si le « ndi » est à porter sur le réseau SFR."
+        },
+        "nom" : {
+          "type" : "string",
+          "description" : "Nom de l’utilisateur."
+        },
+        "prenom" : {
+          "type" : "string",
+          "description" : "Prénom de l’utilisateur."
+        },
+        "idufe" : {
+          "type" : "string",
+          "description" : "Identifiant utilisateur finale."
+        }
+      },
+      "description" : "objet poste de commande.",
+      "example" : [ {
+        "id" : "165354",
+        "idTransverse" : "5425",
+        "ndi" : "0120365494",
+        "rio" : "6465465",
+        "porte" : "O",
+        "nom" : "Bertin",
+        "prenom" : "cécile",
+        "idufe" : "12312312312"
+      } ]
+    },
+    "Commande" : {
+      "type" : "object",
+      "required" : [ "ConfVpn", "acces", "idTransverse", "poste" ],
+      "properties" : {
+        "idTransverse" : {
+          "type" : "string",
+          "example" : "1",
+          "description" : "Id transverse"
+        },
+        "ConfVpn" : {
+          "type" : "object",
+          "example" : {
+            "idTransverse" : "1",
+            "idVpn" : "020102"
+          },
+          "description" : "type de l'acces",
+          "properties" : { }
+        },
+        "acces" : {
+          "type" : "object",
+          "example" : [ {
+            "id" : "65431",
+            "idTransverse" : "1",
+            "type" : "FTTH",
+            "typeDegroupage" : 3,
+            "idEligibilite" : "6465465",
+            "debit" : "100Mo"
+          } ],
+          "description" : "Objet  accès.",
+          "properties" : { }
+        },
+        "poste" : {
+          "type" : "object",
+          "example" : [ {
+            "id" : "9831354",
+            "idTransverse" : "1",
+            "ndi" : "0120365494",
+            "rio" : "6465465",
+            "porte" : "O",
+            "nom" : "Bertin",
+            "prenom" : "cécile",
+            "idufe" : "12312312312"
+          } ],
+          "description" : "ID d’éligibilité (Id R@ ou Id India)",
+          "properties" : { }
+        }
+      },
+      "description" : "objet commande."
+    }
+  },
+  "externalDocs" : {
+    "description" : "Documentation compléte decrivant l'utilisation des interfaces S3D.",
+    "url" : "http://distrib-ws.pack.private.sfr.com:8181/api/arpege/s3d/1.0/"
+  }
+}
