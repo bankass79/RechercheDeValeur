@@ -773,41 +773,13 @@ margin-bottom: 20px;
       "description" : "Id transverse"
     },
     "ConfVpn" : {
-      "type" : "object",
-      "example" : {
-        "idTransverse" : "1",
-        "idVpn" : "020102"
-      },
-      "description" : "type de l'acces",
-      "properties" : { }
+      "$ref" : "#/definitions/ConfVpn"
     },
     "acces" : {
-      "type" : "object",
-      "example" : [ {
-        "id" : "65431",
-        "idTransverse" : "1",
-        "type" : "FTTH",
-        "typeDegroupage" : 3,
-        "idEligibilite" : "6465465",
-        "debit" : "100Mo"
-      } ],
-      "description" : "Objet  accès.",
-      "properties" : { }
+      "$ref" : "#/definitions/Acces"
     },
     "poste" : {
-      "type" : "object",
-      "example" : [ {
-        "id" : "9831354",
-        "idTransverse" : "1",
-        "ndi" : "0120365494",
-        "rio" : "6465465",
-        "porte" : "O",
-        "nom" : "Bertin",
-        "prenom" : "cécile",
-        "idufe" : "12312312312"
-      } ],
-      "description" : "ID d’éligibilité (Id R@ ou Id India)",
-      "properties" : { }
+      "$ref" : "#/definitions/Poste"
     }
   },
   "description" : "objet commande."
@@ -6929,7 +6901,7 @@ try {
             </div>
             <div id="generator">
                 <div class="content">
-                    Generated 2017-08-30T15:50:30.145Z
+                    Generated 2017-08-31T08:37:17.187Z
                 </div>
             </div>
         </div>
