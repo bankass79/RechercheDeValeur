@@ -2827,7 +2827,7 @@ try {
                                             <div class="clearfix"></div>
 
                                             <p></p>
-                                            <p class="marked">Archive une commande.</p>
+                                            <p class="marked">Archive un objet  commande.</p>
                                             <p></p>
                                             <br />
 
@@ -3190,7 +3190,7 @@ try {
                                             <div class="clearfix"></div>
 
                                             <p></p>
-                                            <p class="marked">Ce service permettra à Arpege de récupérer un objet dans le cadre du déploiement d’une commande. Recuperer une commande.</p>
+                                            <p class="marked">permet de consulter un objet Commande.</p>
                                             <p></p>
                                             <br />
 
@@ -3254,7 +3254,7 @@ public class CommandeApiExample {
     public static void main(String[] args) {
         
         CommandeApi apiInstance = new CommandeApi();
-        String idTransverse = idTransverse_example; // String | L'identifiant transverse de la commande
+        String idTransverse = idTransverse_example; // String | L'identifiant transverse de l'objet commande.
         try {
             Commande result = apiInstance.commandeIdTransverseGet(idTransverse);
             System.out.println(result);
@@ -3277,7 +3277,7 @@ public class CommandeApiExample {
 
     public static void main(String[] args) {
         CommandeApi apiInstance = new CommandeApi();
-        String idTransverse = idTransverse_example; // String | L'identifiant transverse de la commande
+        String idTransverse = idTransverse_example; // String | L'identifiant transverse de l'objet commande.
         try {
             Commande result = apiInstance.commandeIdTransverseGet(idTransverse);
             System.out.println(result);
@@ -3300,7 +3300,7 @@ public class CommandeApiExample {
                                                 <div class="tab-pane" id="examples-Commande-commandeIdTransverseGet-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
-String *idTransverse = idTransverse_example; // L'identifiant transverse de la commande
+String *idTransverse = idTransverse_example; // L'identifiant transverse de l'objet commande.
 
 CommandeApi *apiInstance = [[CommandeApi alloc] init];
 
@@ -3322,7 +3322,7 @@ var  = require('');
 
 var api = new .CommandeApi()
 
-var idTransverse = idTransverse_example; // {String} L'identifiant transverse de la commande
+var idTransverse = idTransverse_example; // {String} L'identifiant transverse de l'objet commande.
 
 
 var callback = function(error, data, response) {
@@ -3357,7 +3357,7 @@ namespace Example
         {
             
             var apiInstance = new CommandeApi();
-            var idTransverse = idTransverse_example;  // String | L'identifiant transverse de la commande
+            var idTransverse = idTransverse_example;  // String | L'identifiant transverse de l'objet commande.
 
             try
             {
@@ -3382,7 +3382,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new fr.s3d.arpege\Api\CommandeApi();
-$idTransverse = idTransverse_example; // String | L'identifiant transverse de la commande
+$idTransverse = idTransverse_example; // String | L'identifiant transverse de l'objet commande.
 
 try {
     $result = $api_instance->commandeIdTransverseGet($idTransverse);
@@ -3420,7 +3420,7 @@ try {
 													var schemaWrapper = {
   "name" : "idTransverse",
   "in" : "path",
-  "description" : "L'identifiant transverse de la commande",
+  "description" : "L'identifiant transverse de l'objet commande.",
   "required" : true,
   "type" : "string"
 };
@@ -5057,7 +5057,7 @@ try {
                                             <div class="clearfix"></div>
 
                                             <p></p>
-                                            <p class="marked">Archiver un objet poste.</p>
+                                            <p class="marked">Archive un objet Poste.</p>
                                             <p></p>
                                             <br />
 
@@ -5121,7 +5121,7 @@ public class PosteApiExample {
     public static void main(String[] args) {
         
         PosteApi apiInstance = new PosteApi();
-        String id = id_example; // String | L'identifiant transverse de poste
+        String id = id_example; // String | L'identifiant transverse de l'objet Poste.
         try {
             apiInstance.posteIdOIdDelete(id);
         } catch (ApiException e) {
@@ -5143,7 +5143,7 @@ public class PosteApiExample {
 
     public static void main(String[] args) {
         PosteApi apiInstance = new PosteApi();
-        String id = id_example; // String | L'identifiant transverse de poste
+        String id = id_example; // String | L'identifiant transverse de l'objet Poste.
         try {
             apiInstance.posteIdOIdDelete(id);
         } catch (ApiException e) {
@@ -5165,7 +5165,7 @@ public class PosteApiExample {
                                                 <div class="tab-pane" id="examples-Poste-posteIdOIdDelete-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
-String *id = id_example; // L'identifiant transverse de poste
+String *id = id_example; // L'identifiant transverse de l'objet Poste.
 
 PosteApi *apiInstance = [[PosteApi alloc] init];
 
@@ -5184,7 +5184,7 @@ var  = require('');
 
 var api = new .PosteApi()
 
-var id = id_example; // {String} L'identifiant transverse de poste
+var id = id_example; // {String} L'identifiant transverse de l'objet Poste.
 
 
 var callback = function(error, data, response) {
@@ -5219,7 +5219,7 @@ namespace Example
         {
             
             var apiInstance = new PosteApi();
-            var id = id_example;  // String | L'identifiant transverse de poste
+            var id = id_example;  // String | L'identifiant transverse de l'objet Poste.
 
             try
             {
@@ -5243,7 +5243,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new fr.s3d.arpege\Api\PosteApi();
-$id = id_example; // String | L'identifiant transverse de poste
+$id = id_example; // String | L'identifiant transverse de l'objet Poste.
 
 try {
     $api_instance->posteIdOIdDelete($id);
@@ -5280,7 +5280,7 @@ try {
 													var schemaWrapper = {
   "name" : "id",
   "in" : "path",
-  "description" : "L'identifiant transverse de poste",
+  "description" : "L'identifiant transverse de l'objet Poste.",
   "required" : true,
   "type" : "string"
 };
@@ -5313,7 +5313,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Poste archivé. </h3>
+                                                <h3> Status: 200 - Poste est archivé. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -5344,7 +5344,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Poste archivé."
+  "description" : "Poste est archivé."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -5420,7 +5420,7 @@ try {
                                             <div class="clearfix"></div>
 
                                             <p></p>
-                                            <p class="marked">Archiver tous les objets poste d’une commande.</p>
+                                            <p class="marked">Archive tous les objets poste d’une commande.</p>
                                             <p></p>
                                             <br />
 
@@ -5484,7 +5484,7 @@ public class PosteApiExample {
     public static void main(String[] args) {
         
         PosteApi apiInstance = new PosteApi();
-        String idTransverse = idTransverse_example; // String | L'identifiant transverse de poste
+        String idTransverse = idTransverse_example; // String | L'identifiant transverse de poste à archiver.
         try {
             apiInstance.posteIdTIdTransverseDelete(idTransverse);
         } catch (ApiException e) {
@@ -5506,7 +5506,7 @@ public class PosteApiExample {
 
     public static void main(String[] args) {
         PosteApi apiInstance = new PosteApi();
-        String idTransverse = idTransverse_example; // String | L'identifiant transverse de poste
+        String idTransverse = idTransverse_example; // String | L'identifiant transverse de poste à archiver.
         try {
             apiInstance.posteIdTIdTransverseDelete(idTransverse);
         } catch (ApiException e) {
@@ -5528,7 +5528,7 @@ public class PosteApiExample {
                                                 <div class="tab-pane" id="examples-Poste-posteIdTIdTransverseDelete-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
-String *idTransverse = idTransverse_example; // L'identifiant transverse de poste
+String *idTransverse = idTransverse_example; // L'identifiant transverse de poste à archiver.
 
 PosteApi *apiInstance = [[PosteApi alloc] init];
 
@@ -5547,7 +5547,7 @@ var  = require('');
 
 var api = new .PosteApi()
 
-var idTransverse = idTransverse_example; // {String} L'identifiant transverse de poste
+var idTransverse = idTransverse_example; // {String} L'identifiant transverse de poste à archiver.
 
 
 var callback = function(error, data, response) {
@@ -5582,7 +5582,7 @@ namespace Example
         {
             
             var apiInstance = new PosteApi();
-            var idTransverse = idTransverse_example;  // String | L'identifiant transverse de poste
+            var idTransverse = idTransverse_example;  // String | L'identifiant transverse de poste à archiver.
 
             try
             {
@@ -5606,7 +5606,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new fr.s3d.arpege\Api\PosteApi();
-$idTransverse = idTransverse_example; // String | L'identifiant transverse de poste
+$idTransverse = idTransverse_example; // String | L'identifiant transverse de poste à archiver.
 
 try {
     $api_instance->posteIdTIdTransverseDelete($idTransverse);
@@ -5643,7 +5643,7 @@ try {
 													var schemaWrapper = {
   "name" : "idTransverse",
   "in" : "path",
-  "description" : "L'identifiant transverse de poste",
+  "description" : "L'identifiant transverse de poste à archiver.",
   "required" : true,
   "type" : "string"
 };
@@ -5676,7 +5676,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Poste archivé. </h3>
+                                                <h3> Status: 200 - Poste est  archivé. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -5707,7 +5707,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Poste archivé."
+  "description" : "Poste est  archivé."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -6146,7 +6146,7 @@ try {
                                             <div class="clearfix"></div>
 
                                             <p></p>
-                                            <p class="marked">Ce service permettra aux SSA clients du 3D, d’écrire un nouvel objet dans la base de données. Crée un poste.</p>
+                                            <p class="marked">permet de créer/écrire un objet Poste.</p>
                                             <p></p>
                                             <br />
 
@@ -6210,7 +6210,7 @@ public class PosteApiExample {
     public static void main(String[] args) {
         
         PosteApi apiInstance = new PosteApi();
-        Poste idTransverse = ; // Poste | poste à creer
+        Poste idTransverse = ; // Poste | permet de créer un objet Poste.
         try {
             apiInstance.postePost(idTransverse);
         } catch (ApiException e) {
@@ -6232,7 +6232,7 @@ public class PosteApiExample {
 
     public static void main(String[] args) {
         PosteApi apiInstance = new PosteApi();
-        Poste idTransverse = ; // Poste | poste à creer
+        Poste idTransverse = ; // Poste | permet de créer un objet Poste.
         try {
             apiInstance.postePost(idTransverse);
         } catch (ApiException e) {
@@ -6254,7 +6254,7 @@ public class PosteApiExample {
                                                 <div class="tab-pane" id="examples-Poste-postePost-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
-Poste *idTransverse = ; // poste à creer
+Poste *idTransverse = ; // permet de créer un objet Poste.
 
 PosteApi *apiInstance = [[PosteApi alloc] init];
 
@@ -6273,7 +6273,7 @@ var  = require('');
 
 var api = new .PosteApi()
 
-var idTransverse = ; // {Poste} poste à creer
+var idTransverse = ; // {Poste} permet de créer un objet Poste.
 
 
 var callback = function(error, data, response) {
@@ -6308,7 +6308,7 @@ namespace Example
         {
             
             var apiInstance = new PosteApi();
-            var idTransverse = new Poste(); // Poste | poste à creer
+            var idTransverse = new Poste(); // Poste | permet de créer un objet Poste.
 
             try
             {
@@ -6332,7 +6332,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new fr.s3d.arpege\Api\PosteApi();
-$idTransverse = ; // Poste | poste à creer
+$idTransverse = ; // Poste | permet de créer un objet Poste.
 
 try {
     $api_instance->postePost($idTransverse);
@@ -6372,7 +6372,7 @@ try {
 													var schemaWrapper = {
   "in" : "body",
   "name" : "idTransverse",
-  "description" : "poste à creer",
+  "description" : "permet de créer un objet Poste.",
   "required" : true,
   "schema" : {
     "$ref" : "#/definitions/Poste"
@@ -6414,7 +6414,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Full answer </h3>
+                                                <h3> Status: 200 - Toute réponse. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -6445,7 +6445,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Full answer"
+  "description" : "Toute réponse."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -6521,7 +6521,7 @@ try {
                                             <div class="clearfix"></div>
 
                                             <p></p>
-                                            <p class="marked">Ce service permettra de modifier un objet via une API REST à partir d’un SSA.</p>
+                                            <p class="marked">permet de modifier l&#39;objet Poste.</p>
                                             <p></p>
                                             <br />
 
@@ -6789,7 +6789,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Full answer </h3>
+                                                <h3> Status: 200 - Toute réponse. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -6820,7 +6820,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Full answer"
+  "description" : "Toute réponse."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -6901,7 +6901,7 @@ try {
             </div>
             <div id="generator">
                 <div class="content">
-                    Generated 2017-08-31T08:48:03.256Z
+                    Generated 2017-08-31T08:53:16.453Z
                 </div>
             </div>
         </div>
