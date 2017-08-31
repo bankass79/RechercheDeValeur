@@ -1956,7 +1956,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - opération réalisée avec succès. </h3>
+                                                <h3> Status: 200 - opération réalisée avec succès.Détail de l&#39;objet consulté. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -1987,7 +1987,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "opération réalisée avec succès."
+  "description" : "opération réalisée avec succès.Détail de l'objet consulté."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -3162,7 +3162,7 @@ try {
 
 
 
-                                                <h3> Status: 404 - Acces non trouvé. </h3>
+                                                <h3> Status: 404 - Acces non créer/écrit. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -3193,7 +3193,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Acces non trouvé."
+  "description" : "Acces non créer/écrit."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -3899,7 +3899,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Détail de l&#39;accès trouvé </h3>
+                                                <h3> Status: 200 - Détail de l&#39;objet consulté. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -3930,7 +3930,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Détail de l'accès trouvé",
+  "description" : "Détail de l'objet consulté.",
   "schema" : {
     "$ref" : "#/definitions/Commande"
   }
@@ -4345,6 +4345,158 @@ try {
 
 
 
+                                                <h3> Status: 400 - IdTransverse fourni est invalide. </h3>
+
+                                                <ul class="nav nav-tabs nav-tabs-examples" >
+
+                                                    <li class="active">
+                                                        <a href="#examples-ConfVpn-confVpnIdTransverseDelete-schema">Schema</a>
+                                                    </li>
+
+
+                                                </ul>
+
+
+
+
+
+
+
+                                                <div class="tab-content" style='margin-bottom: 10px;'>
+
+
+
+                                                    <div class="tab-pane active" id="examples-ConfVpn-confVpnIdTransverseDelete-schema">
+
+
+
+
+                                                        <div id='examples-ConfVpn-confVpnIdTransverseDelete-schema-400' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+
+                                                            <script>
+                                                                $(document).ready(function() {
+                                                                    var schemaWrapper = {
+  "description" : "IdTransverse fourni est invalide."
+};
+                                                                    var schema = schemaWrapper.schema;
+                                                                    schemaWrapper.definitions = defs;
+                                                                    //console.log(JSON.stringify(schema))
+                                                                    JsonRefs.resolveRefs(schemaWrapper, {
+                                                                        "depth": 3,
+                                                                        "resolveRemoteRefs": false,
+                                                                        "resolveFileRefs": false
+                                                                    }, function(err, resolved, metadata) {
+
+                                                                        //console.log(JSON.stringify(resolved));
+
+
+
+                                                                        var view = new JSONSchemaView(resolved.schema, 3);
+                                                                        $('#examples-ConfVpn-confVpnIdTransverseDelete-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-ConfVpn-confVpnIdTransverseDelete-schema-400');
+                                                                        result.empty();
+                                                                        result.append(view.render());
+                                                                    });
+
+
+
+
+                                                                });
+                                                            </script>
+                                                        </div>
+                                                        <input id='examples-ConfVpn-confVpnIdTransverseDelete-schema-data' type='hidden' value=''></input>
+
+
+
+
+
+
+                                                    </div>
+
+
+
+
+                                                </div>
+
+
+
+
+                                                <h3> Status: 404 - ConfVpn non trouvé. </h3>
+
+                                                <ul class="nav nav-tabs nav-tabs-examples" >
+
+                                                    <li class="active">
+                                                        <a href="#examples-ConfVpn-confVpnIdTransverseDelete-schema">Schema</a>
+                                                    </li>
+
+
+                                                </ul>
+
+
+
+
+
+
+
+                                                <div class="tab-content" style='margin-bottom: 10px;'>
+
+
+
+                                                    <div class="tab-pane active" id="examples-ConfVpn-confVpnIdTransverseDelete-schema">
+
+
+
+
+                                                        <div id='examples-ConfVpn-confVpnIdTransverseDelete-schema-404' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+
+                                                            <script>
+                                                                $(document).ready(function() {
+                                                                    var schemaWrapper = {
+  "description" : "ConfVpn non trouvé."
+};
+                                                                    var schema = schemaWrapper.schema;
+                                                                    schemaWrapper.definitions = defs;
+                                                                    //console.log(JSON.stringify(schema))
+                                                                    JsonRefs.resolveRefs(schemaWrapper, {
+                                                                        "depth": 3,
+                                                                        "resolveRemoteRefs": false,
+                                                                        "resolveFileRefs": false
+                                                                    }, function(err, resolved, metadata) {
+
+                                                                        //console.log(JSON.stringify(resolved));
+
+
+
+                                                                        var view = new JSONSchemaView(resolved.schema, 3);
+                                                                        $('#examples-ConfVpn-confVpnIdTransverseDelete-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-ConfVpn-confVpnIdTransverseDelete-schema-404');
+                                                                        result.empty();
+                                                                        result.append(view.render());
+                                                                    });
+
+
+
+
+                                                                });
+                                                            </script>
+                                                        </div>
+                                                        <input id='examples-ConfVpn-confVpnIdTransverseDelete-schema-data' type='hidden' value=''></input>
+
+
+
+
+
+
+                                                    </div>
+
+
+
+
+                                                </div>
+
+
+
+
 
 
 
@@ -4639,7 +4791,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Détail de l&#39;accès trouvé. </h3>
+                                                <h3> Status: 200 - Détail de l&#39;objet consulté. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -4670,7 +4822,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Détail de l'accès trouvé.",
+  "description" : "Détail de l'objet consulté.",
   "schema" : {
     "$ref" : "#/definitions/ConfVpn"
   }
@@ -4794,7 +4946,7 @@ try {
 
 
 
-                                                <h3> Status: 404 - Acces non trouvé. </h3>
+                                                <h3> Status: 404 - ConfVpn non trouvé. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -4825,7 +4977,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Acces non trouvé."
+  "description" : "ConfVpn non trouvé."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -5169,7 +5321,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Full answer </h3>
+                                                <h3> Status: 200 - ConfVpn a été crée/écrit. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -5200,7 +5352,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Full answer"
+  "description" : "ConfVpn a été crée/écrit."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -5218,6 +5370,158 @@ try {
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
                                                                         $('#examples-ConfVpn-confVpnPost-schema-data').val(JSON.stringify(resolved.schema));
                                                                         var result = $('#examples-ConfVpn-confVpnPost-schema-200');
+                                                                        result.empty();
+                                                                        result.append(view.render());
+                                                                    });
+
+
+
+
+                                                                });
+                                                            </script>
+                                                        </div>
+                                                        <input id='examples-ConfVpn-confVpnPost-schema-data' type='hidden' value=''></input>
+
+
+
+
+
+
+                                                    </div>
+
+
+
+
+                                                </div>
+
+
+
+
+                                                <h3> Status: 400 - IdTransverse fourni est invalide. </h3>
+
+                                                <ul class="nav nav-tabs nav-tabs-examples" >
+
+                                                    <li class="active">
+                                                        <a href="#examples-ConfVpn-confVpnPost-schema">Schema</a>
+                                                    </li>
+
+
+                                                </ul>
+
+
+
+
+
+
+
+                                                <div class="tab-content" style='margin-bottom: 10px;'>
+
+
+
+                                                    <div class="tab-pane active" id="examples-ConfVpn-confVpnPost-schema">
+
+
+
+
+                                                        <div id='examples-ConfVpn-confVpnPost-schema-400' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+
+                                                            <script>
+                                                                $(document).ready(function() {
+                                                                    var schemaWrapper = {
+  "description" : "IdTransverse fourni est invalide."
+};
+                                                                    var schema = schemaWrapper.schema;
+                                                                    schemaWrapper.definitions = defs;
+                                                                    //console.log(JSON.stringify(schema))
+                                                                    JsonRefs.resolveRefs(schemaWrapper, {
+                                                                        "depth": 3,
+                                                                        "resolveRemoteRefs": false,
+                                                                        "resolveFileRefs": false
+                                                                    }, function(err, resolved, metadata) {
+
+                                                                        //console.log(JSON.stringify(resolved));
+
+
+
+                                                                        var view = new JSONSchemaView(resolved.schema, 3);
+                                                                        $('#examples-ConfVpn-confVpnPost-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-ConfVpn-confVpnPost-schema-400');
+                                                                        result.empty();
+                                                                        result.append(view.render());
+                                                                    });
+
+
+
+
+                                                                });
+                                                            </script>
+                                                        </div>
+                                                        <input id='examples-ConfVpn-confVpnPost-schema-data' type='hidden' value=''></input>
+
+
+
+
+
+
+                                                    </div>
+
+
+
+
+                                                </div>
+
+
+
+
+                                                <h3> Status: 404 - ConfVpn non crée/écrit. </h3>
+
+                                                <ul class="nav nav-tabs nav-tabs-examples" >
+
+                                                    <li class="active">
+                                                        <a href="#examples-ConfVpn-confVpnPost-schema">Schema</a>
+                                                    </li>
+
+
+                                                </ul>
+
+
+
+
+
+
+
+                                                <div class="tab-content" style='margin-bottom: 10px;'>
+
+
+
+                                                    <div class="tab-pane active" id="examples-ConfVpn-confVpnPost-schema">
+
+
+
+
+                                                        <div id='examples-ConfVpn-confVpnPost-schema-404' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+
+                                                            <script>
+                                                                $(document).ready(function() {
+                                                                    var schemaWrapper = {
+  "description" : "ConfVpn non crée/écrit."
+};
+                                                                    var schema = schemaWrapper.schema;
+                                                                    schemaWrapper.definitions = defs;
+                                                                    //console.log(JSON.stringify(schema))
+                                                                    JsonRefs.resolveRefs(schemaWrapper, {
+                                                                        "depth": 3,
+                                                                        "resolveRemoteRefs": false,
+                                                                        "resolveFileRefs": false
+                                                                    }, function(err, resolved, metadata) {
+
+                                                                        //console.log(JSON.stringify(resolved));
+
+
+
+                                                                        var view = new JSONSchemaView(resolved.schema, 3);
+                                                                        $('#examples-ConfVpn-confVpnPost-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-ConfVpn-confVpnPost-schema-404');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -5340,7 +5644,7 @@ public class ConfVpnApiExample {
     public static void main(String[] args) {
         
         ConfVpnApi apiInstance = new ConfVpnApi();
-        ConfVpn idTransverse = ; // ConfVpn | ConfVpn a été modifié.
+        ConfVpn idTransverse = ; // ConfVpn | permet de modifier ConfVpn.
         try {
             apiInstance.confVpnPut(idTransverse);
         } catch (ApiException e) {
@@ -5362,7 +5666,7 @@ public class ConfVpnApiExample {
 
     public static void main(String[] args) {
         ConfVpnApi apiInstance = new ConfVpnApi();
-        ConfVpn idTransverse = ; // ConfVpn | ConfVpn a été modifié.
+        ConfVpn idTransverse = ; // ConfVpn | permet de modifier ConfVpn.
         try {
             apiInstance.confVpnPut(idTransverse);
         } catch (ApiException e) {
@@ -5384,7 +5688,7 @@ public class ConfVpnApiExample {
                                                 <div class="tab-pane" id="examples-ConfVpn-confVpnPut-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
-ConfVpn *idTransverse = ; // ConfVpn a été modifié.
+ConfVpn *idTransverse = ; // permet de modifier ConfVpn.
 
 ConfVpnApi *apiInstance = [[ConfVpnApi alloc] init];
 
@@ -5403,7 +5707,7 @@ var  = require('');
 
 var api = new .ConfVpnApi()
 
-var idTransverse = ; // {ConfVpn} ConfVpn a été modifié.
+var idTransverse = ; // {ConfVpn} permet de modifier ConfVpn.
 
 
 var callback = function(error, data, response) {
@@ -5438,7 +5742,7 @@ namespace Example
         {
             
             var apiInstance = new ConfVpnApi();
-            var idTransverse = new ConfVpn(); // ConfVpn | ConfVpn a été modifié.
+            var idTransverse = new ConfVpn(); // ConfVpn | permet de modifier ConfVpn.
 
             try
             {
@@ -5462,7 +5766,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new fr.s3d.arpege\Api\ConfVpnApi();
-$idTransverse = ; // ConfVpn | ConfVpn a été modifié.
+$idTransverse = ; // ConfVpn | permet de modifier ConfVpn.
 
 try {
     $api_instance->confVpnPut($idTransverse);
@@ -5502,7 +5806,7 @@ try {
 													var schemaWrapper = {
   "in" : "body",
   "name" : "idTransverse",
-  "description" : "ConfVpn a été modifié.",
+  "description" : "permet de modifier ConfVpn.",
   "required" : true,
   "schema" : {
     "$ref" : "#/definitions/ConfVpn"
@@ -5544,7 +5848,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Toute réponse. </h3>
+                                                <h3> Status: 200 - ConfVpn a été modifié. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -5575,7 +5879,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Toute réponse."
+  "description" : "ConfVpn a été modifié."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -6637,7 +6941,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Détail de l&#39;accès trouvé. </h3>
+                                                <h3> Status: 200 - Détail de l&#39;objet consulté. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -6668,7 +6972,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Détail de l'accès trouvé."
+  "description" : "Détail de l'objet consulté."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -7012,7 +7316,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Toute réponse. </h3>
+                                                <h3> Status: 200 - Poste à été crée/écrit. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -7043,7 +7347,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Toute réponse."
+  "description" : "Poste à été crée/écrit."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -7387,7 +7691,7 @@ try {
 
                                             <h2>Responses</h2>
 
-                                                <h3> Status: 200 - Toute réponse. </h3>
+                                                <h3> Status: 200 - Poste a été modfié. </h3>
 
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
@@ -7418,7 +7722,7 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Toute réponse."
+  "description" : "Poste a été modfié."
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -7499,7 +7803,7 @@ try {
             </div>
             <div id="generator">
                 <div class="content">
-                    Generated 2017-08-31T09:25:02.254Z
+                    Generated 2017-08-31T09:33:22.788Z
                 </div>
             </div>
         </div>
