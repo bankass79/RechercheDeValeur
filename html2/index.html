@@ -7811,7 +7811,7 @@ public class PosteApiExample {
     public static void main(String[] args) {
         
         PosteApi apiInstance = new PosteApi();
-        String idTransverse = idTransverse_example; // String | poste à modifier
+        Poste idTransverse = ; // Poste | poste à modifier
         try {
             apiInstance.postePut(idTransverse);
         } catch (ApiException e) {
@@ -7833,7 +7833,7 @@ public class PosteApiExample {
 
     public static void main(String[] args) {
         PosteApi apiInstance = new PosteApi();
-        String idTransverse = idTransverse_example; // String | poste à modifier
+        Poste idTransverse = ; // Poste | poste à modifier
         try {
             apiInstance.postePut(idTransverse);
         } catch (ApiException e) {
@@ -7855,7 +7855,7 @@ public class PosteApiExample {
                                                 <div class="tab-pane" id="examples-Poste-postePut-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
-String *idTransverse = idTransverse_example; // poste à modifier
+Poste *idTransverse = ; // poste à modifier
 
 PosteApi *apiInstance = [[PosteApi alloc] init];
 
@@ -7874,7 +7874,7 @@ var  = require('');
 
 var api = new .PosteApi()
 
-var idTransverse = idTransverse_example; // {String} poste à modifier
+var idTransverse = ; // {Poste} poste à modifier
 
 
 var callback = function(error, data, response) {
@@ -7909,7 +7909,7 @@ namespace Example
         {
             
             var apiInstance = new PosteApi();
-            var idTransverse = idTransverse_example;  // String | poste à modifier
+            var idTransverse = new Poste(); // Poste | poste à modifier
 
             try
             {
@@ -7933,7 +7933,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new fr.s3d.arpege\Api\PosteApi();
-$idTransverse = idTransverse_example; // String | poste à modifier
+$idTransverse = ; // Poste | poste à modifier
 
 try {
     $api_instance->postePut($idTransverse);
@@ -7955,36 +7955,50 @@ try {
 
 
 
-                                                <div class="methodsubtabletitle">Header parameters</div>
+
+
+                                                <div class="methodsubtabletitle">Body parameters</div>
                                                 <table id="methodsubtable">
                                                     <tr>
                                                         <th width="150px">Name</th>
                                                         <th>Description</th>
                                                     </tr>
                                                     <!---->
-                                                        <tr><td style="width:150px;">idTransverse*</td>
+                                                        <tr><td style="width:150px;">idTransverse <span style="color:red;">*</span></td>
 <td>
 
 
 <script>
 												$(document).ready(function() {
 													var schemaWrapper = {
+  "in" : "body",
   "name" : "idTransverse",
-  "in" : "header",
   "description" : "poste à modifier",
-  "required" : true
+  "required" : true,
+  "schema" : {
+    "$ref" : "#/definitions/Poste"
+  }
 };
-													var schema = schemaWrapper;
+													
+														var schema = schemaWrapper.schema;
+														schemaWrapper.definitions = defs;
+														JsonRefs.resolveRefs(schemaWrapper, {"depth":3, "resolveRemoteRefs":false,"resolveFileRefs":false },function (err, resolved, metadata) {
+														
 
-
-
-
-													var view = new JSONSchemaView(schema,0);
+														
+													var view = new JSONSchemaView(resolved.schema,2,{isBodyParam: true});
+													 
 													var result = $('#d2e199_postePut_idTransverse');
 													result.empty();
 													result.append(view.render());
+													
+
+													
+    											
+													
 
 
+												});
 
 
 
@@ -7996,8 +8010,6 @@ try {
 
 
                                                 </table>
-
-
 
 
 
@@ -8115,7 +8127,7 @@ try {
             </div>
             <div id="generator">
                 <div class="content">
-                    Generated 2017-08-31T09:58:04.513Z
+                    Generated 2017-08-31T09:58:24.667Z
                 </div>
             </div>
         </div>
