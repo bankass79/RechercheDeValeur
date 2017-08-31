@@ -1766,7 +1766,8 @@ public class AccesApiExample {
         AccesApi apiInstance = new AccesApi();
         String idTransverse = idTransverse_example; // String | L'identifiant transverse du vpn.
         try {
-            apiInstance.accesIdTransverseGet(idTransverse);
+            Acces result = apiInstance.accesIdTransverseGet(idTransverse);
+            System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling AccesApi#accesIdTransverseGet");
             e.printStackTrace();
@@ -1788,7 +1789,8 @@ public class AccesApiExample {
         AccesApi apiInstance = new AccesApi();
         String idTransverse = idTransverse_example; // String | L'identifiant transverse du vpn.
         try {
-            apiInstance.accesIdTransverseGet(idTransverse);
+            Acces result = apiInstance.accesIdTransverseGet(idTransverse);
+            System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling AccesApi#accesIdTransverseGet");
             e.printStackTrace();
@@ -1813,7 +1815,10 @@ String *idTransverse = idTransverse_example; // L'identifiant transverse du vpn.
 AccesApi *apiInstance = [[AccesApi alloc] init];
 
 [apiInstance accesIdTransverseGetWith:idTransverse
-              completionHandler: ^(NSError* error) {
+              completionHandler: ^(Acces output, NSError* error) {
+                            if (output) {
+                                NSLog(@"%@", output);
+                            }
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -1834,7 +1839,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully.');
+    console.log('API called successfully. Returned data: ' + data);
   }
 };
 api.accesIdTransverseGet(idTransverse, callback);
@@ -1866,7 +1871,8 @@ namespace Example
 
             try
             {
-                apiInstance.accesIdTransverseGet(idTransverse);
+                Acces result = apiInstance.accesIdTransverseGet(idTransverse);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -1889,7 +1895,8 @@ $api_instance = new fr.s3d.arpege\Api\AccesApi();
 $idTransverse = idTransverse_example; // String | L'identifiant transverse du vpn.
 
 try {
-    $api_instance->accesIdTransverseGet($idTransverse);
+    $result = $api_instance->accesIdTransverseGet($idTransverse);
+    print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AccesApi->accesIdTransverseGet: ', $e->getMessage(), PHP_EOL;
 }
@@ -1987,7 +1994,10 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Détail de l'accès trouvé."
+  "description" : "Détail de l'accès trouvé.",
+  "schema" : {
+    "$ref" : "#/definitions/Acces"
+  }
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -6891,7 +6901,7 @@ try {
             </div>
             <div id="generator">
                 <div class="content">
-                    Generated 2017-08-31T09:12:11.778Z
+                    Generated 2017-08-31T09:17:15.419Z
                 </div>
             </div>
         </div>
