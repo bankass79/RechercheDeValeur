@@ -6913,7 +6913,8 @@ public class PosteApiExample {
         PosteApi apiInstance = new PosteApi();
         String idTransverse = idTransverse_example; // String | L'identifiant transverse de ConfVpn.
         try {
-            apiInstance.posteIdTransverseGet(idTransverse);
+            Poste result = apiInstance.posteIdTransverseGet(idTransverse);
+            System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling PosteApi#posteIdTransverseGet");
             e.printStackTrace();
@@ -6935,7 +6936,8 @@ public class PosteApiExample {
         PosteApi apiInstance = new PosteApi();
         String idTransverse = idTransverse_example; // String | L'identifiant transverse de ConfVpn.
         try {
-            apiInstance.posteIdTransverseGet(idTransverse);
+            Poste result = apiInstance.posteIdTransverseGet(idTransverse);
+            System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling PosteApi#posteIdTransverseGet");
             e.printStackTrace();
@@ -6960,7 +6962,10 @@ String *idTransverse = idTransverse_example; // L'identifiant transverse de Conf
 PosteApi *apiInstance = [[PosteApi alloc] init];
 
 [apiInstance posteIdTransverseGetWith:idTransverse
-              completionHandler: ^(NSError* error) {
+              completionHandler: ^(Poste output, NSError* error) {
+                            if (output) {
+                                NSLog(@"%@", output);
+                            }
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -6981,7 +6986,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully.');
+    console.log('API called successfully. Returned data: ' + data);
   }
 };
 api.posteIdTransverseGet(idTransverse, callback);
@@ -7013,7 +7018,8 @@ namespace Example
 
             try
             {
-                apiInstance.posteIdTransverseGet(idTransverse);
+                Poste result = apiInstance.posteIdTransverseGet(idTransverse);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -7036,7 +7042,8 @@ $api_instance = new fr.s3d.arpege\Api\PosteApi();
 $idTransverse = idTransverse_example; // String | L'identifiant transverse de ConfVpn.
 
 try {
-    $api_instance->posteIdTransverseGet($idTransverse);
+    $result = $api_instance->posteIdTransverseGet($idTransverse);
+    print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling PosteApi->posteIdTransverseGet: ', $e->getMessage(), PHP_EOL;
 }
@@ -7134,7 +7141,10 @@ try {
                                                             <script>
                                                                 $(document).ready(function() {
                                                                     var schemaWrapper = {
-  "description" : "Détail de l'objet consulté."
+  "description" : "Détail de l'objet consulté.",
+  "schema" : {
+    "$ref" : "#/definitions/Poste"
+  }
 };
                                                                     var schema = schemaWrapper.schema;
                                                                     schemaWrapper.definitions = defs;
@@ -8117,7 +8127,7 @@ try {
             </div>
             <div id="generator">
                 <div class="content">
-                    Generated 2017-08-31T09:53:14.480Z
+                    Generated 2017-08-31T09:54:09.864Z
                 </div>
             </div>
         </div>
