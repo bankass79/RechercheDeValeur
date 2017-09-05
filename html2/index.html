@@ -5806,9 +5806,9 @@ public class ConfVpnApiExample {
     public static void main(String[] args) {
         
         ConfVpnApi apiInstance = new ConfVpnApi();
-        ConfVpn idTransverse = ; // ConfVpn | permet de modifier ConfVpn.
+        String confVpn = confVpn_example; // String | permet de modifier ConfVpn.
         try {
-            apiInstance.confVpnPut(idTransverse);
+            apiInstance.confVpnPut(confVpn);
         } catch (ApiException e) {
             System.err.println("Exception when calling ConfVpnApi#confVpnPut");
             e.printStackTrace();
@@ -5828,9 +5828,9 @@ public class ConfVpnApiExample {
 
     public static void main(String[] args) {
         ConfVpnApi apiInstance = new ConfVpnApi();
-        ConfVpn idTransverse = ; // ConfVpn | permet de modifier ConfVpn.
+        String confVpn = confVpn_example; // String | permet de modifier ConfVpn.
         try {
-            apiInstance.confVpnPut(idTransverse);
+            apiInstance.confVpnPut(confVpn);
         } catch (ApiException e) {
             System.err.println("Exception when calling ConfVpnApi#confVpnPut");
             e.printStackTrace();
@@ -5850,11 +5850,11 @@ public class ConfVpnApiExample {
                                                 <div class="tab-pane" id="examples-ConfVpn-confVpnPut-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
-ConfVpn *idTransverse = ; // permet de modifier ConfVpn.
+String *confVpn = confVpn_example; // permet de modifier ConfVpn.
 
 ConfVpnApi *apiInstance = [[ConfVpnApi alloc] init];
 
-[apiInstance confVpnPutWith:idTransverse
+[apiInstance confVpnPutWith:confVpn
               completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
@@ -5869,7 +5869,7 @@ var  = require('');
 
 var api = new .ConfVpnApi()
 
-var idTransverse = ; // {ConfVpn} permet de modifier ConfVpn.
+var confVpn = confVpn_example; // {String} permet de modifier ConfVpn.
 
 
 var callback = function(error, data, response) {
@@ -5879,7 +5879,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-api.confVpnPut(idTransverse, callback);
+api.confVpnPut(confVpn, callback);
 
                                                     </code></pre>
                                                 </div>
@@ -5904,11 +5904,11 @@ namespace Example
         {
             
             var apiInstance = new ConfVpnApi();
-            var idTransverse = new ConfVpn(); // ConfVpn | permet de modifier ConfVpn.
+            var confVpn = confVpn_example;  // String | permet de modifier ConfVpn.
 
             try
             {
-                apiInstance.confVpnPut(idTransverse);
+                apiInstance.confVpnPut(confVpn);
             }
             catch (Exception e)
             {
@@ -5928,10 +5928,10 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new fr.s3d.arpege\Api\ConfVpnApi();
-$idTransverse = ; // ConfVpn | permet de modifier ConfVpn.
+$confVpn = confVpn_example; // String | permet de modifier ConfVpn.
 
 try {
-    $api_instance->confVpnPut($idTransverse);
+    $api_instance->confVpnPut($confVpn);
 } catch (Exception $e) {
     echo 'Exception when calling ConfVpnApi->confVpnPut: ', $e->getMessage(), PHP_EOL;
 }
@@ -5950,61 +5950,49 @@ try {
 
 
 
-
-
-                                                <div class="methodsubtabletitle">Body parameters</div>
+                                                <div class="methodsubtabletitle">Header parameters</div>
                                                 <table id="methodsubtable">
                                                     <tr>
                                                         <th width="150px">Name</th>
                                                         <th>Description</th>
                                                     </tr>
                                                     <!---->
-                                                        <tr><td style="width:150px;">idTransverse <span style="color:red;">*</span></td>
+                                                        <tr><td style="width:150px;">confVpn*</td>
 <td>
 
 
 <script>
 												$(document).ready(function() {
 													var schemaWrapper = {
-  "in" : "body",
-  "name" : "idTransverse",
+  "name" : "confVpn",
+  "in" : "header",
   "description" : "permet de modifier ConfVpn.",
-  "required" : true,
-  "schema" : {
-    "$ref" : "#/definitions/ConfVpn"
-  }
+  "required" : true
 };
-													
-														var schema = schemaWrapper.schema;
-														schemaWrapper.definitions = defs;
-														JsonRefs.resolveRefs(schemaWrapper, {"depth":3, "resolveRemoteRefs":false,"resolveFileRefs":false },function (err, resolved, metadata) {
-														
+													var schema = schemaWrapper;
 
-														
-													var view = new JSONSchemaView(resolved.schema,2,{isBodyParam: true});
-													 
-													var result = $('#d2e199_confVpnPut_idTransverse');
+
+
+
+													var view = new JSONSchemaView(schema,0);
+													var result = $('#d2e199_confVpnPut_confVpn');
 													result.empty();
 													result.append(view.render());
-													
-
-													
-    											
-													
 
 
-												});
 
 
 
 												});
 												</script>
-												<div id="d2e199_confVpnPut_idTransverse"></div>
+												<div id="d2e199_confVpnPut_confVpn"></div>
 </td>
 </tr>
 
 
                                                 </table>
+
+
 
 
 
@@ -8127,7 +8115,7 @@ try {
             </div>
             <div id="generator">
                 <div class="content">
-                    Generated 2017-08-31T09:58:24.667Z
+                    Generated 2017-09-05T16:10:35.678Z
                 </div>
             </div>
         </div>
